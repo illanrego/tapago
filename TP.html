@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lan="pt-BR">
+
+ <head>
+   <meta charset="utf-8">
+   <link rel="stylesheet" href="styletreino.css">
+   <meta name="viewport" content="width=device-width,initial-scale=1"/>
+   <link rel="icon" href=".."/>
+   <script src="script5.js" defer> </script>
+   <title>Meu treino 2.0</title>
+ </head>
+ 
+ <body>
+
+
+   <h1>Tá pago, illão?</h1>
+
+ <div>
+   <label>Selecione uma data:</label>
+   <select id="selectMes"">
+       <option value="">Mês</option>
+       <option value="01">Janeiro</option>
+       <option value="02">Fevereiro</option>
+       <option value="03">Março</option>
+       <option value="04">Abril</option>
+       <option value="05">Maio</option>
+       <option value="06">Junho</option>
+       <option value="07">Julho</option>
+       <option value="08">Agosto</option>
+       <option value="09">Setembro</option>
+       <option value="10">Outubro</option>
+       <option value="11">Novembro</option>
+       <option value="12">Dezembro</option>
+      </select>
+      
+      <select id="selectData">
+
+ 	<option value= "">Dia</option>
+ 	<option>01</option>
+ 	<option>02</option>
+ 	<option>03</option>
+ 	<option>04</option>
+ 	<option>05</option>
+ 	<option>06</option>
+ 	<option>07</option>
+ 	<option>08</option>
+ 	<option>09</option>
+ 	<option>10</option>
+ 	<option>11</option>
+ 	<option>12</option>
+ 	<option>13</option>
+ 	<option>14</option>
+ 	<option>15</option>
+ 	<option>16</option>
+ 	<option>17</option>
+ 	<option>18</option>
+ 	<option>19</option>
+ 	<option>20</option>
+ 	<option>21</option>
+ 	<option>22</option>
+ 	<option>23</option>
+ 	<option>24</option>
+ 	<option>25</option>
+ 	<option>26</option>
+ 	<option>27</option>
+ 	<option>28</option>
+ 	<option>29</option>
+ 	<option>30</option>
+ 	<option>31</option>
+     </select>
+ 
+    <!--<button id="loadBtn">Load</button>-->
+
+  </div>
+  <div id="coloridor">
+   
+     
+    <button id="pagoBtn">PAGO</button>
+    <button id="nPagoBtn">NÃO PAGO</button>
+    <button id="alphaBtn">α</button>
+    <button id="betaBtn">β</button>
+    <button id="gammaBtn">γ</button>
+    <button id="descansoBtn">Descanso</button>
+  
+  </div>
+  <div>
+
+
+  </div>
+  
+  <div>
+     <button id="saveBtn">Salvar</button>
+     <button id="correctBtn">Corrigir</button>
+ 
+   </div>
+   
+   <div>
+      <button id="treinoOcultarBtn">Ocultar Treino</button>
+      <button id="treinoMostrarBtn">Mostrar Treino</button>
+   </div>
+   <div>
+     <button id="novoNomeBtn">Selecionar nome de usuário</button> 
+  </div>
+     
+  <div  id="treino">
+         <table> 
+           <colgroup>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+          </colgroup>
+           
+        <tr>
+          <th>Treinos</th>
+          <th>Dias</th>
+          <th>Músculos</th>
+          <th>Exercícios</th>
+          <th>Tipo</th>
+          <th>Sets</th>
+          <th>Descanso</th>
+        </tr>
+   
+   
+        <tr>
+          <th class="gregos" rowspan="6" scope="row">α</th>
+          <th rowspan="6">Segunda e Quinta</th>
+          <th rowspan="4">Costas</th>
+          <th>T-bar Row</th>
+          <th>Machine Plated</th>
+          <th>3 x 8</th>
+          <th>2'</th>
+        </tr>
+        <tr>
+          <th>Row</th>
+          <th>Machine Cable</th>
+          <th>3 x 8 </th>
+          <th>2'</th>
+        </tr>
+        
+        <tr>
+          <th>Pulley</th>
+          <th>Machine Cable</th>
+          <th>3 x 8 </th>
+          <th>2'</th>
+        </tr>
+        <tr class="exec2">
+          <th>Shrug (I)</th>
+          <th>Dumbbells</th>
+          <th>3 x 12 </th>
+          <th>2'</th>
+        </tr>
+        <tr>
+          <th rowspan="2">Bíceps</th>
+          <th>Curls</th>
+          <th>Dumbbell</th>
+          <th>3 x 8</th>
+          <th>2'</th>
+        </tr>
+        <tr class="exec2" style="border-bottom: 4px solid black;">
+          <th>Curls</th>
+          <th>Cable</th>
+          <th>3 x 8</th>
+          <th>2'</th>
+        </tr>
+        <tr>
+          <th scope="row" rowspan="6" class="gregos">β</th>
+          <th rowspan="6">Terça & Sexta</th>
+          <th rowspan="3">Peito</th>
+          <th>Bench Press</th>
+          <th>Barbell</th>
+          <th>3 x 8 </th>
+          <th>2'</th>
+        </tr>
+        <tr> 
+          <th>Cross (T)</th>
+          <th>Cable</th>
+          <th>3 x 8 </th>
+          <th>2'</th>
+        </tr>
+        <tr class="exec2">
+          <th>Inc. Bench Press</th>
+          <th>Dumbbells</th>
+          <th>2 x 8</th>
+          <th>2'</th>
+        <tr>
+          <th rowspan="2"> Deltóide</th>
+          <th>Overhead Press</th>
+          <th>Dumbbells (seated)</th>
+          <th>3 x 8 </th>
+          <th>2'</th>
+        </tr>
+        <tr class="exec2">
+          <th>Lateral Raise</th>
+          <th>Cable Cross</th>
+          <th>3 x 8 </th>
+          <th>2' (1')</th>
+        </tr>
+
+       <tr class="exec2" style="border-bottom: 4px solid black;">
+         <th>Tríceps</th>
+         <th>Pushdown</th>
+         <th>Cable Cross</th>
+         <th>3 x 8</th>
+          <th>2'</th>
+       </tr>
+       <tr>
+          <th scope="row" rowspan="5" class="gregos">γ</th>
+          <th rowspan="5">Quarta & Sábado</th>
+          <th rowspan="5">Legs</th>
+          <th>Squat</th>
+          <th>Barbell</th>
+          <th>3 x 5 </th>
+          <th>2'30"</th>
+        </tr>
+        <tr> 
+          <th>Deadlift</th>
+          <th>Barbell</th>
+          <th>3 x 5 </th>
+          <th>2'30</th>
+        </tr>
+        <tr>
+          <th>Leg Press</th>
+          <th>Machine</th>
+          <th>3 x 8</th>
+          <th>2'</th>
+        <tr>
+          <th>Leg extension</th>
+          <th>Machine</th>
+          <th>3 x 8</th>
+          <th>2'</th>
+        </tr>
+        <tr class="exec2">
+          <th>Calf Raise</th>
+          <th>Machine Plated (seated)</th>
+          <th>3 x 8 </th>
+          <th>2'</th>
+        </tr>
+    
+         
+     </table>
+  
+  </div>
+  
+  
+    <div id="secao">
+          <h2>Calendario
+          </h2>
+  
+     
+    </div>
+    
+    
+  </body>
+</html>
+
+   
+	  

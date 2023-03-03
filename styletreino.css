@@ -1,0 +1,351 @@
+@font-face {
+    font-family: 'athleticregular';
+    src: url('../athletic/athletic-webfont.woff2') format('woff2'),
+         url('../athletic/athletic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'saiyan_sansregular';
+    src: url('../dragonball/saiyan-sans-webfont.woff2') format('woff2'),
+         url('../dragonball/saiyan-sans-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* REGRAS GERAIS */
+
+html {
+  font-size: 10px;
+  font-family: Helvetica;
+
+
+  }
+  
+body {
+  display:flex;
+  flex-flow: column wrap;
+
+  align-items: center;
+  }
+  
+h1 {
+  /*position: relative;
+  right: 60rem;
+  left: 60rem;*/
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-family: "times new roman";
+  font-size: 7rem;
+  text-align: center;
+  background-color: #2B2121;/*#433F3E; /*#282423;/*#433F3E;*/
+  color: ivory;
+  text-shadow: 3px 3px 3px darkgrey,
+  	       5px 5px 5px black;
+  padding: 5px;
+  margin: 30px auto 30px auto;
+  }
+
+h2 {
+  letter-spacing: 1.5px; 	
+  margin: 30px auto 10px auto;
+  /*position: relative;
+  right: 22rem;
+  left: 22rem;*/
+  text-align: center;
+  line-height: 5rem;
+  font-family: "athleticregular";
+  font-size: 4rem;
+  text-align: center;
+  color: black;
+  text-shadow: 3px 3px 3px white,
+  	       5px 5px 5px darkgrey;
+  background-color: white;
+  padding: 5px;
+     max-height: 50px;
+  }
+
+
+label {
+
+  letter-spacing: 1.5px; 	
+  margin: 30px auto 10px auto;
+  /*position: relative;
+  right: 22rem;
+  left: 22rem;*/
+  text-align: center;
+  line-height: 5rem;
+  font-family: "athleticregular";
+  font-size: 3.5rem;
+  text-align: center;
+  color: black;
+  text-shadow: 3px 3px 3px white,
+  	       5px 5px 5px darkgrey;
+  background-color: white;
+  padding: 5px;
+     max-height: 50px;
+  }
+/*.divtreino h2 {
+  display: inline-block;
+  position: relative;
+  right: 43rem;
+  left: 43rem;
+}*/
+
+  
+p {
+  font-size: 2rem;
+  font-weight: bolder;
+  color: white;
+  text-shadow: 2px 2px 2px black,
+               3px 3px 3px grey;
+  display: block;
+  width: 70%;
+  }
+  
+p::first-letter
+ {
+   font-size: 4rem;
+   }
+
+li {
+  font-size:2rem;
+  }
+  
+/*ELEMENTOS MAIORES*/
+
+body {
+  background-color: black;
+  background-image: url(../stuff/sandowgim.jpeg);
+  background-size: cover;
+  background-repeat: repeat-y;
+  margin: 10px;
+  
+  }
+
+td {
+border: 1px solid black;
+padding:8px;
+min-width: 80px;
+
+}
+
+table
+     {
+  border-collapse: collapse;
+  border: 10px ridge #2B2121;
+  font-size: 1.8rem;
+  background-color: ivory; /*rgba(240,240,240);*/
+  text-align: center;
+margin: 20px auto;
+  }
+
+td {
+  height: 5rem;
+  font-weight: bold;
+  }
+  
+#treino td, th {
+   border: 1px solid black;
+   border-bottom: 2px dotted black;
+   padding: 8px;
+
+   }
+   
+.exec2,
+.gregos+th+th
+{
+  border-bottom: 2px solid black;
+  }
+  
+
+    
+#treino th{
+  border-right-style: hidden;
+  border-left-style: hidden;
+  }    
+
+  
+
+  
+
+ /*
+nav
+ {
+  height: 4em;
+  border: 2px solid blue;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  position: fixed;
+  
+ }
+
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  align-items: center;
+  flex: 200px;
+  } */
+
+
+select,
+button {
+ /*background-color: ivory;
+ color: #444444; */
+ font-weight: bold;
+ font-size: 20px;
+ text-align: center;
+ padding: 20px;
+ } 
+ 
+ button {
+ padding: 20px;
+  align-items: center;
+   margin:3px;
+ }
+ 
+ select {
+ display: inline-block;
+ align-items: center;
+ margin: auto;
+ }
+
+
+/*main {
+  display: flex;
+  align-items: center;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  position: relative;
+*/  
+  
+  }
+  
+div {
+
+  padding: 0px;
+  display: flex;
+  flex-flow: row wrap;
+  
+  
+  }
+  
+#nave {
+   border: 5px solid black;
+   width: 50%;
+  /*justify-content: space-around; */
+   display: flex;
+}
+  
+  
+ 
+ /*TABELAS*/
+ 
+th {
+   border: 3px ridge black;
+   background-color: white; /*#181615;/*#282423;*/
+   color: black;
+   padding: 5px;
+   }
+ 
+
+.folga {
+  background-color: lightgrey;
+  }
+
+.recup {
+ background-color: orange;
+ }
+.gregos {
+  font-size: 6.5rem;
+  font-weight: 900;
+}
+   
+#treino tr:nth-of-type(even) {
+ 	background: ghostwhite;
+ 	}
+
+.descanso {
+background-color: lightgrey;
+}
+
+.pago {
+  background-color: palegreen;
+ }
+ 
+.naopago {
+  background-color: lightcoral;
+ }
+ 
+ .corrigir {
+ background-color: ivory;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
