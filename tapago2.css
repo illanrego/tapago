@@ -1,0 +1,251 @@
+/* FONTES */
+
+/*REGRAS GLOBAIS*/
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body, html, main {
+    margin: 0;
+    padding: 0;
+}
+
+/*PALETA OFICIAL*/
+
+:root {
+    --cor-escura: #2B2121;
+    --cor-clara: ivory;
+}
+
+/* ESTRUTURA E RESPONSIVIDADE */
+
+
+body {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    
+}
+
+main {
+    position: relative;
+    width: 100%;
+    top: 0;
+}
+
+nav {
+    position: fixed;
+    margin: 0;
+    bottom: 0;
+    height: 45px;
+    border: 1px solid black;
+    width: 100%;
+    
+}
+
+#navDiv {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin:auto;
+    align-items: center;
+    background-color: var(--cor-escura);
+    height: 100%;
+}
+
+header {
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(250,250,250, 1), rgba(100, 100, 100, 0.1));
+    position: absolute;
+    top: 0;
+}
+
+fieldset:first-of-type {
+    margin-top: 100px;
+}
+
+
+
+
+/* TÍTULOS E SUBTÍTULOS */
+
+
+h1 {
+    text-transform: uppercase;
+    font-family: "times new roman";
+    text-align: center;
+    background-color: var(--cor-escura);
+    color: var(--cor-clara);
+    font-size: calc(2.5rem + 5vw);
+    width: 60%;
+    padding: 8px;
+    margin: 10px auto 40px auto;
+    line-height: 1;
+}
+
+h2 { 
+    text-transform: uppercase;
+    margin: 30px auto 10px auto;
+    text-align: center;
+    font-family: Impact;
+    font-size: calc(1rem + 3vw);
+    color: var(--cor-escura);
+    background-color: var(--cor-clara);
+    padding: 4px;
+}
+
+legend {
+    text-transform: uppercase;
+    font-family: "times new roman";
+    font-size: calc(1.5rem + 1vw);
+    background-color: var(--cor-clara);
+    color: var(--cor-escura);
+    font-weight: 800;
+    margin: auto;
+
+}
+
+/* DECORAÇÃO */
+
+body {
+    background-color: rgba(180, 180, 180);
+    background-image: url(sandowgim.jpeg);
+    background-blend-mode: color-burn;
+    background-repeat: repeat-y;
+    background-size: 300%;
+    background-position-x: center;
+}
+
+li { list-style: none;
+    border: 1px solid black;
+    display: block;
+    height: 100%;
+}
+
+fieldset {
+   display: flex;
+   flex-flow: row wrap;
+   background-color: rgba(200, 200, 200, 0.5);
+   margin: 25px 10px 0 10px;
+   padding: 5px;
+   justify-content: center;
+}
+
+
+/* BOTÔES E SELECTS */
+
+button {
+    margin: 10px 15px;
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-weight: normal;
+    font-size: 1.2rem;
+    width: 30%;
+}
+
+button:hover,
+button:active {
+    color: white;
+    cursor: pointer;
+}
+
+select {
+    margin: 5px;
+    border: 1.5px solid black;
+    border-radius: 5px;
+    background-color: var(--cor-clara);
+    padding: 3px;
+}
+
+#naopagoBtn:hover,
+#naopagoBtn:active {
+    background-color: darkred;
+}
+
+#pagoBtn:hover,
+#pagoBtn:active {
+    background-color: darkgreen;
+}
+
+#descansoBtn:hover,
+#descansoBtn:active {
+    background-color: #444444;
+}
+
+#corrigirBtn:hover,
+#corrigirBtn:active {
+    background-color: darkslategrey;
+}
+
+#naopagoBtn {
+    background-color: lightcoral;
+}
+
+#pagoBtn {
+    background-color: palegreen;
+}
+
+#descansoBtn {
+    background-color: #AAAAAA;
+}
+
+/* TABELA (CALENDARIO) */
+
+table {
+    border-collapse: collapse;
+    border: 5px ridge var(--cor-clara);
+    background-color: var(--cor-clara);
+    text-align: center;
+    margin: 0px auto 100px auto;
+}
+
+td {
+    border: 1px solid black;
+    padding: 3px;
+    font-weight: normal;
+    height: 4rem;
+    min-width: 4rem;
+    font-size: 1rem;
+
+}
+
+.focado {
+    font-weight: bolder;
+    border: 2px dotted black;
+}
+
+th {
+    border: 2px ridge var(--cor-escura);
+    background-color: var(--cor-escura);
+    color: var(--cor-clara);
+    padding: 3px;
+    height: 2rem;
+    min-width: 4rem;
+    font-size: 0.8rem;
+
+}
+
+
+/* STATUS DE CADA DIA */
+
+.descanso {
+    background-color: lightgrey;
+}
+    
+.pago {
+      background-color: palegreen;
+}
+     
+.naopago {
+      background-color: lightcoral;
+}
+     
+.corrigir {
+     background-color: ivory;
+}
+    
